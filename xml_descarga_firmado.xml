@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <wsa:Action>http://DescargaMasivaTerceros.sat.gob.mx/IDescargaMasivaTercerosService/Descargar</wsa:Action>
+    <wsa:To>https://cfdidescargamasiva.clouda.sat.gob.mx/DescargaMasivaService.svc</wsa:To>
+    <wsa:MessageID>urn:uuid:d4885c68-4d6a-4fc2-85fd-8f88400848a0</wsa:MessageID>
+    <wsa:ReplyTo>
+      <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+    </wsa:ReplyTo>
+  </s:Header>
+  <s:Body>
+    <ns0:Descargar xmlns:ns0="http://DescargaMasivaTerceros.sat.gob.mx">
+      <ns0:solicitud xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Solicitud" RfcSolicitante="REM150313D57" IdPaquete="B7189882-C270-4D75-9B6A-8234B9D23B5A_01">
+        <ds:Signature>
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#Solicitud">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>u1HBWIfDh4UDYd1Y9Fx8CaCEXM4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>CklB72/J333KJ5KkKVls1WGmWhl+RthJJmu7+5e1k3a/tESyOBwihsqSmOhnPHEW
+EdHokCazTMQCN6UfUdAf/Epr4Z+81aPZYt4dGF5vPAnZtgvAOMEGkNCga+xZEwF5
+ASR2WbSJKP8/s9mnPreL9mEEllROqTIk2vv5ZvaT89OHTzmiApmJUA3s7+b0xh+o
+Aa7kPx+Q8JxHNovUP0pIpM259Vh98L81lWNekO0LjKjde1V+yMxyO5sAKMv8+o2a
+TBgxsMad96qcZO8obcAtrSvUBc8obZmTpl2WsiOLblFz1FwG7ICNKYzaNlPamPV3
+1iQqUg5fRM/Hbmek5junNA==</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIGIDCCBAigAwIBAgIUMDAwMDEwMDAwMDA1MTgzNTAzNDEwDQYJKoZIhvcNAQEL
+BQAwggGEMSAwHgYDVQQDDBdBVVRPUklEQUQgQ0VSVElGSUNBRE9SQTEuMCwGA1UE
+CgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UE
+CwwRU0FULUlFUyBBdXRob3JpdHkxKjAoBgkqhkiG9w0BCQEWG2NvbnRhY3RvLnRl
+Y25pY29Ac2F0LmdvYi5teDEmMCQGA1UECQwdQVYuIEhJREFMR08gNzcsIENPTC4g
+R1VFUlJFUk8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQ
+Q0lVREFEIERFIE1FWElDTzETMBEGA1UEBwwKQ1VBVUhURU1PQzEVMBMGA1UELRMM
+U0FUOTcwNzAxTk4zMVwwWgYJKoZIhvcNAQkCE01yZXNwb25zYWJsZTogQURNSU5J
+U1RSQUNJT04gQ0VOVFJBTCBERSBTRVJWSUNJT1MgVFJJQlVUQVJJT1MgQUwgQ09O
+VFJJQlVZRU5URTAeFw0yMzAzMDgyMzEzMDRaFw0yNzAzMDgyMzEzNDRaMIG8MRIw
+EAYDVQQDEwlSRU1ZVCBTQ1AxEjAQBgNVBCkTCVJFTVlUIFNDUDESMBAGA1UEChMJ
+UkVNWVQgU0NQMQswCQYDVQQGEwJNWDEqMCgGCSqGSIb3DQEJARYbYWxlamFuZHJh
+QGJhc3RlcmlzcmV5ZXMuY29tMSUwIwYDVQQtExxSRU0xNTAzMTNENTcgLyBSRU1Q
+OTAwMjA4RFQ3MR4wHAYDVQQFExUgLyBSRU1QOTAwMjA4TVlOWVJMMDcwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCPUdl+KnslPxcyYGeHVg6AU/xMjnVv
+jaXpHXCzx+CkRfSuKT09owRflFS3ECmZDipRSm5wEFL7W3BmdKOL8QkYuI04jv5J
+PiomvJYdhFl9xHA0YgdwkSBdTFpQyBcIOOD5O7yZHaohm6plA3Og5Sblk0NcxBkJ
+QQ8bLkGxneQj916DDxQX8GGcof+HROOseVec21NyAphM3ODTfedKoXOFLG9NLG8B
+FQm5lw5Dh/OVf8jC1rSx0rrMjhcVADQ0CU69tOqgLnNknXGeqGvqwUOGGb2LMN/1
+heZenJy5SiC00h15Mcr8SQhaUNwdFMnEX0NFoF5dMdQmqsya3QTelZWRAgMBAAGj
+TzBNMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgPYMBEGCWCGSAGG+EIBAQQEAwIF
+oDAdBgNVHSUEFjAUBggrBgEFBQcDBAYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQAD
+ggIBACsUkyCteVGscDxzGiwGyZv0rWH9YI8ymiaV60uY6qEys0OGtIbHrP87fbW3
+SoRaFUIgmMHp6kFsS8cw7GPdBimzMXbGjncRP6vZqA9hntnbblmmZesFA3k5PTRx
+7/UNwwDb3bJJyLMNv7OT50FpODWWVByuzTrDO9Be/Gsz+DNK9xoPo/GaGTCx7JA8
+7e4c9NQd3Nk50JRSCncjjcSG9r1fYcPtmMs0CcMwmBSfWIdB+gFUxIz/7rdlSSU7
+98HUpPig5n1gg2pittbuzWfH2IYuc1YH5sX2bXyNrBK2qkrUnWCc376lL8ZVH0di
+iM0SjF7LfJSTiurumAPiXVCnGT7RfnJbzT450QFLlnSkgfFKlAZzBWuPC8XwE3fV
+taWvmRy90XzfqV2RuA5hwOXHDnQQpg/cQe2GjsW0aKwSXVvgkR+zLgFrbRnJ9xKR
+w09MJJMYKbD9VghmzGiaTgf6ct1kyJtyj5nyfNCGLkyjNNMfKj1VLgSr3cSQouwy
+PgSs0JOISnJHoNomzPX7OcxsNvCYOLIhZf7Ltb305RbE2FM6zb0WWA1ISN26FXQb
+gr2LKkQvF767VXlAfD/tCwkx9nwIk/FXLhZ5zN01A8Zfpb8TRVHPLtAfgvfG4ZUA
+eFFTok8PfmYFKJgyvgLzVN2x0i1gqt2gYTyF3XmkJM/ySaXt
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+      </ns0:solicitud>
+    </ns0:Descargar>
+  </s:Body>
+</s:Envelope>
