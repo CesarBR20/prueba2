@@ -7,7 +7,7 @@ import string
 import os
 from datetime import datetime
 
-# --------------------------------------------------
+
 def load_config():
     with open("config.yml", encoding="utf-8") as f:
         raw = f.read()
@@ -24,7 +24,6 @@ def load_token(config):
     with open(config["token_path"], encoding="utf-8") as f:
         return f.read().strip()
 
-# --------------------------------------------------
 def build_solicitud_xml(config):
     NS_SOAP     = "http://schemas.xmlsoap.org/soap/envelope/"
     NS_DESCARGA = "http://DescargaMasivaTerceros.sat.gob.mx"
@@ -74,8 +73,6 @@ def build_solicitud_xml(config):
 
     return env, soap_action
 
-
-# --------------------------------------------------
 def sign_solicitud_xml(doc, config):
     sol = doc.find(".//solicitud") or \
           doc.find(".//{http://DescargaMasivaTerceros.sat.gob.mx}solicitud")
@@ -160,7 +157,6 @@ def ya_existe_solicitud(historial_path, tipo_solicitud, fecha_inicio, fecha_fin,
                 return campos[0]
     return False
 
-# --------------------------------------------------
 def main():
     print("=== Solicitud de Descarga Masiva de CFDIs del SAT ===")
     cfg   = load_config()

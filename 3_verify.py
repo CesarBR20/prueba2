@@ -6,6 +6,7 @@ import xmlsec
 from urllib.parse import unquote
 from datetime import datetime
 
+
 def load_config():
     with open("config.yml", encoding="utf-8") as f:
         raw = f.read()
