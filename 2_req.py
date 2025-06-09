@@ -157,10 +157,37 @@ def ya_existe_solicitud(historial_path, tipo_solicitud, fecha_inicio, fecha_fin,
                 return campos[0]
     return False
 
+def crear_estructura_anual(config):
+    fecha_inicio = config["fechas"]["inicio"]
+    anio = datetime.strptime(fecha_inicio, "%Y-%m-%d").year
+    base_path = config["base_path"]
+    anio_path = os.path.join(base_path, str(anio))
+    config["anio_path"] = anio_path
+
+    # Definir rutas completas para el año
+    config["ids_path"]       = os.path.join(anio_path, "solicitudes", "id_solicitud.txt")
+    config["historial_path"] = os.path.join(anio_path, "solicitudes", "historial.csv")
+    config["paquetes_path"]  = os.path.join(anio_path, "solicitudes", "paquetes.txt")
+    config["paquetes_dir"]   = os.path.join(anio_path, "paquetes")
+
+    rutas = [
+        os.path.join(anio_path, "paquetes", "cfdi"),
+        os.path.join(anio_path, "paquetes", "metadata", "semestre1"),
+        os.path.join(anio_path, "paquetes", "metadata", "semestre2"),
+        os.path.join(anio_path, "solicitudes")
+    ]
+
+    for ruta in rutas:
+        os.makedirs(ruta, exist_ok=True)
+
+    return config
+
 def main():
     print("=== Solicitud de Descarga Masiva de CFDIs del SAT ===")
     cfg   = load_config()
     token = load_token(cfg)
+    
+    cfg = crear_estructura_anual(cfg)
 
     tipo_solicitud = cfg["descarga"].get("tipo_solicitud", "")
     fecha_inicio   = cfg["fechas"].get("inicio", "")

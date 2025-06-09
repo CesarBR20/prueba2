@@ -2,16 +2,11 @@ cliente_rfc: "REM150313D57"
 
 base_path: "clientes/${cliente_rfc}"
 
-historial_path: "${base_path}/solicitudes/historial.csv"
-
 cer_path: "${base_path}/certificados/cert.pem"
 key_path: "${base_path}/certificados/fiel.pem"
 pfx_password_path: "${base_path}/certificados/password.txt"
 
 token_path: "${base_path}/tokens/token.txt"
-ids_path: "${base_path}/solicitudes/id_solicitud.txt"
-paquetes_dir: "${base_path}/paquetes"
-paquetes_path: "${base_path}/solicitudes/paquetes.txt"
 
 rfc: "${cliente_rfc}"
 
@@ -29,10 +24,10 @@ endpoints:
   descarga_action: "http://DescargaMasivaTerceros.sat.gob.mx/IDescargaMasivaTercerosService/Descargar"
 
 fechas:
-  inicio: "2024-07-01"
-  fin: "2024-12-31"
+  inicio: "2024-02-01"
+  fin: "2024-06-30"
 
 descarga:
-  tipo_solicitud: "CFDI"
+  tipo_solicitud: "Metadata"
   tipo_comp: "E"
   rfc_emisor: "${cliente_rfc}"

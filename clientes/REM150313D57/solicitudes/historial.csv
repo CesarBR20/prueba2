@@ -1,4 +1,0 @@
-﻿id_solicitud,tipo_solicitud,fecha_inicio,fecha_fin,tipo_comp,rfc_emisor,fecha_solicitud,estado,fecha_descarga
-77b47419-db47-4c95-aff4-b626f16ac3d5,CFDI,2024-01-02,2024-12-31,E,REM150313D57,2025-06-03,listo_para_descarga,2025-06-06
-ea69bebe-15e1-4431-871e-7be7bd5ecec4,CFDI,2024-01-01,2024-06-30,E,REM150313D57,2025-06-06,solicitado,
-6aa40889-b142-4600-8cdf-e00bb81b1a5f,CFDI,2024-07-01,2024-12-31,E,REM150313D57,2025-06-06,solicitado,

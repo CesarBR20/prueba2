@@ -192,10 +192,26 @@ def actualizar_historial(config, id_solicitud, nuevo_estado):
 
     print(f"✓ Historial actualizado para {id_solicitud} → {nuevo_estado}")
 
+def preparar_paths_por_anio(config):
+    fecha_inicio = config["fechas"]["inicio"]
+    anio = datetime.strptime(fecha_inicio, "%Y-%m-%d").year
+    base_path = config["base_path"]
+    anio_path = os.path.join(base_path, str(anio))
+    config["anio_path"] = anio_path
+
+    config["ids_path"]       = os.path.join(anio_path, "solicitudes", "id_solicitud.txt")
+    config["historial_path"] = os.path.join(anio_path, "solicitudes", "historial.csv")
+    config["paquetes_path"]  = os.path.join(anio_path, "solicitudes", "paquetes.txt")
+    config["paquetes_dir"]   = os.path.join(anio_path, "paquetes")
+
+    return config
+
+
 def main():
     print("=== Verificación de solicitudes de descarga SAT ===")
     try:
         config = load_config()
+        config = preparar_paths_por_anio(config)
         token = load_token(config)
         ids = load_pending_ids(config)
         if not ids:

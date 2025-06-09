@@ -3,11 +3,11 @@
   <s:Header>
     <wsa:Action>http://DescargaMasivaTerceros.sat.gob.mx/ISolicitaDescargaService/SolicitaDescargaEmitidos</wsa:Action>
     <wsa:To>https://cfdidescargamasivasolicitud.clouda.sat.gob.mx/SolicitaDescargaService.svc</wsa:To>
-    <wsa:MessageID>uuid:14cfc719-d2e0-4ee7-aaed-d5f9e98fde6c</wsa:MessageID>
+    <wsa:MessageID>uuid:05a77963-d63f-4adc-b6fa-799665632045</wsa:MessageID>
   </s:Header>
   <s:Body>
     <ns0:SolicitaDescargaEmitidos>
-      <ns0:solicitud Id="Solicitud" RfcSolicitante="REM150313D57" FechaInicial="2024-07-01T00:00:00" FechaFinal="2024-12-31T23:59:59" TipoSolicitud="CFDI" TipoComp="E" RfcEmisor="REM150313D57">
+      <ns0:solicitud Id="Solicitud" RfcSolicitante="REM150313D57" FechaInicial="2024-02-01T00:00:00" FechaFinal="2024-06-30T23:59:59" TipoSolicitud="Metadata" TipoComp="E" RfcEmisor="REM150313D57">
         <ds:Signature>
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
@@ -17,15 +17,15 @@
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>J1N59MWZNELytDzUQuyAbmP8rWQ=</ds:DigestValue>
+<ds:DigestValue>FVztWba/WQYQ4dhfbhCiXkyqDYo=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue>CHBsloIjORQrHJVvsBLtJGSNBuf9pgfCbwzYTsprgSLQTKAr6ChHq/Z343aD5+oX
-p8io7Go6GTPhNr+cB+Ev3dvuu4Y3PBNIDfBr34TU0cvHIFoc5P0Ki0tu1ntOEaQC
-H9Xg7onuuewXdCs3q/WYi6Q8pjvR0LbnmF14Iv2LcVPT2WM5VMIn/VEJWhB4js/R
-s7YukeC9EorYd+5G7Gla318W5Is9KLmY20RCv0wVHGeeMmhbGyF3U1j/uf+bR00X
-EXTOqfcbhm612nVvxEA9F+6gZk7ZCMGl2S1QfXNWvOtvCyehPpmXK6jg2cAFuIGT
-c1bBuujLkvH5L6PjsvY84w==</ds:SignatureValue>
+<ds:SignatureValue>cMHt+FQOp5C9shJ28QVH5uOiXsqTlXYeVNg+X4fiSjOjv/7HC0Xh4N3In5/LncWZ
+rUluL/5qHxuqtTec/VAagcIEeOr7VHw55pfJA7fDi5Fdl5CVm3IN6r+2IHlMIQTF
+/ltKdFVdXtRbP1w3+fhu2cRIzMRbZ/ogyWP2SmrmasBetZAEOitTIoe6FDLl+JGV
+KPXq8tasvwV3ggvnB+PayptyI3R+9QJKJB6cyphjuoRNdytq0T9c9gaEjugHe+bq
+v0S5hytVUjqdzpj4zHCn0v3Y5HZ07fb9joHC5DSCRDlHWKuZ/QfkaWC7EJZmCxUH
+o3Hgp8mKlVrXMyJ0gl/N0Q==</ds:SignatureValue>
 <ds:KeyInfo>
 <ds:X509Data>
 <ds:X509Certificate>MIIGIDCCBAigAwIBAgIUMDAwMDEwMDAwMDA1MTgzNTAzNDEwDQYJKoZIhvcNAQEL
